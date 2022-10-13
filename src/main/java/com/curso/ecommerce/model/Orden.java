@@ -29,6 +29,10 @@ public class Orden {
 	@OneToOne(mappedBy = "orden")
 	private DetalleOrden detalle;
 
+	public Orden(){
+		
+	}
+
 	public Orden(Integer id, String numero, Date fechaCreacion, Date fechaRecibida, double total) {
 		super();
 		this.id = id;
